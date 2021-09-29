@@ -60,6 +60,8 @@
             ;[say-hello]
             ;[simple-parent @name]
             ;[lister-user]
+            [:input {:type     "button" :value "I am a new red button!"
+                     :on-click #(re-frame/dispatch [::events/inc-count])}]
             [counting-component]
             [counting-component-reframe]
             ]))
